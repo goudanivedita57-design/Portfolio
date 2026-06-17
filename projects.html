@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Nivedita Shankar Gouda</title>
+    <meta name="description" content="Portfolio projects - image restoration, sales analytics, and payroll management." />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true">NS</span>
+          <span>
+            <span class="brand-text">Nivedita</span>
+            <span class="brand-sub">Computer Science and Design Undergraduate</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">
+          <a class="nav-link" data-nav-link href="./index.html">Home</a>
+          <a class="nav-link" data-nav-link href="./about.html">About</a>
+          <a class="nav-link" data-nav-link href="./skills.html">Skills</a>
+          <a class="nav-link" data-nav-link href="./projects.html">Projects</a>
+          <a class="nav-link" data-nav-link href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-transition" aria-hidden="true"></div>
+
+    <main id="content">
+      <section class="container section reveal" data-reveal>
+        <div style="margin-bottom: 1.3rem;">
+          <h2 style="margin:0; font-size:1.8rem; letter-spacing:-.02em;">Projects</h2>
+          <p style="margin:.6rem 0 0; color: var(--muted); line-height:1.7;">
+            Selected work aligned with Python, SQL, analytics, statistics, and machine learning.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="glass card reveal" data-reveal>
+            <h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>AI-Based Image Restoration and Enhancement System</h3>
+            <p style="margin-bottom:.9rem;">
+              A project focused on restoring damaged images and enhancing low-quality CCTV footage.
+            </p>
+            <ul class="list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Developed an AI-powered system to restore damaged images and enhance low-quality CCTV footage.</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Applied image processing techniques using Python and OpenCV.</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Improved image clarity for better visual analysis.</li>
+            </ul>
+            <div class="project-meta">
+              <span class="tech"><i class="fa-brands fa-python" aria-hidden="true"></i>&nbsp; Python</span>
+              <span class="tech"><i class="fa-solid fa-image" aria-hidden="true"></i>&nbsp; OpenCV</span>
+            </div>
+          </article>
+
+          <article class="glass card reveal" data-reveal>
+            <h3><i class="fa-solid fa-chart-line" aria-hidden="true"></i>Sales Data Analysis and Forecasting Dashboard</h3>
+            <p style="margin-bottom:.9rem;">
+              A dashboard built to explore sales performance, identify trends, and forecast future outcomes.
+            </p>
+            <ul class="list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Built a dashboard using Python, SQL, Flask, and Machine Learning.</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Performed sales trend analysis and forecasting.</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Generated business insights through data visualization.</li>
+            </ul>
+            <div class="project-meta">
+              <span class="tech"><i class="fa-brands fa-python" aria-hidden="true"></i>&nbsp; Python</span>
+              <span class="tech"><i class="fa-solid fa-database" aria-hidden="true"></i>&nbsp; SQL</span>
+              <span class="tech"><i class="fa-solid fa-server" aria-hidden="true"></i>&nbsp; Flask</span>
+              <span class="tech"><i class="fa-solid fa-brain" aria-hidden="true"></i>&nbsp; Machine Learning</span>
+            </div>
+          </article>
+
+          <article class="glass card reveal" data-reveal>
+            <h3><i class="fa-solid fa-receipt" aria-hidden="true"></i>Payroll Management System</h3>
+            <p style="margin-bottom:.9rem;">
+              A payroll management application to automate employee salary calculations and payroll processing.
+            </p>
+            <ul class="list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Managed employee records, salary details, allowances, and deductions using a structured database.</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Improved accuracy and efficiency through automated calculations and reporting.</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Designed to simplify payroll processing and reporting.</li>
+            </ul>
+            <div class="project-meta">
+              <span class="tech"><i class="fa-brands fa-python" aria-hidden="true"></i>&nbsp; Python</span>
+              <span class="tech"><i class="fa-solid fa-database" aria-hidden="true"></i>&nbsp; SQL</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="mini-mark" aria-hidden="true">NS</span>
+          <span>Nivedita Shankar Gouda</span>
+        </div>
+        <span>© <span id="year"></span> Nivedita. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
+
+

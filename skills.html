@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills | Nivedita Shankar Gouda</title>
+    <meta name="description" content="Technical skills, tools, and proficiency of Nivedita Shankar Gouda." />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true">NS</span>
+          <span>
+            <span class="brand-text">Nivedita</span>
+            <span class="brand-sub">Computer Science and Design Undergraduate</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">
+          <a class="nav-link" data-nav-link href="./index.html">Home</a>
+          <a class="nav-link" data-nav-link href="./about.html">About</a>
+          <a class="nav-link active" data-nav-link href="./skills.html">Skills</a>
+          <a class="nav-link" data-nav-link href="./projects.html">Projects</a>
+          <a class="nav-link" data-nav-link href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="container section">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap;">
+          <div>
+            <h1>Skills</h1>
+            <p class="hint">Technical summary and toolset — practical strengths in Python, SQL, analytics, statistics, and software development.</p>
+          </div>
+          <div style="display:flex; gap:.6rem; align-items:center;">
+            <a class="btn btn-ghost" href="./nivedita_resume.pdf" download>Download Resume</a>
+            <a class="btn btn-primary" href="./contact.html">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:1rem;">
+          <div class="glass card">
+            <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Programming Languages</h3>
+            <ul class="list">
+              <li><strong>Python</strong></li>
+              <li><strong>SQL</strong></li>
+              <li><strong>HTML</strong> and <strong>CSS</strong></li>
+            </ul>
+          </div>
+
+          <div class="glass card">
+            <h3><i class="fa-solid fa-toolbox" aria-hidden="true"></i> Core Concepts</h3>
+            <ul class="list">
+              <li>Data Structures and Algorithms</li>
+              <li>Object-Oriented Programming</li>
+              <li>DBMS</li>
+              <li>Statistics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:1rem;">
+          <div class="glass card">
+            <h3><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Data Analytics</h3>
+            <ul class="list">
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Data Visualization</li>
+            </ul>
+          </div>
+
+          <div class="glass card">
+            <h3><i class="fa-solid fa-toolbox" aria-hidden="true"></i> Tools & Platforms</h3>
+            <ul class="list">
+              <li>GitHub</li>
+              <li>Google Colab</li>
+              <li>Figma</li>
+              <li>UiPath StudioX</li>
+              <li>VS Code</li>
+              <li>Cursor AI</li>
+            </ul>
+          </div>
+        </div>
+
+        <section style="margin-top:1rem; display:grid; gap:.9rem; grid-template-columns: 1fr;">
+          <div class="glass card">
+            <h3><i class="fa-solid fa-user-check" aria-hidden="true"></i> Soft Skills</h3>
+            <ul class="list">
+              <li>Problem Solving</li>
+              <li>Analytical Thinking</li>
+              <li>Team Collaboration</li>
+              <li>Communication</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="mini-mark" aria-hidden="true">NS</span>
+          <span>Nivedita Shankar Gouda</span>
+        </div>
+        <span>© <span id="year"></span> Nivedita. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

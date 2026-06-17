@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Nivedita Shankar Gouda</title>
+    <meta name="description" content="Get in touch with Nivedita — phone, email, or message." />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true">NS</span>
+          <span>
+            <span class="brand-text">Nivedita</span>
+            <span class="brand-sub">Computer Science and Design Undergraduate</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">
+          <a class="nav-link" data-nav-link href="./index.html">Home</a>
+          <a class="nav-link" data-nav-link href="./about.html">About</a>
+          <a class="nav-link" data-nav-link href="./skills.html">Skills</a>
+          <a class="nav-link" data-nav-link href="./projects.html">Projects</a>
+          <a class="nav-link active" data-nav-link href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="container section">
+        <div style="display:grid; grid-template-columns: 1fr 360px; gap:1.25rem; align-items:start;">
+          <div>
+            <h1>Contact</h1>
+            <p class="hint">I'm open to internships and entry-level roles in Python, data analytics, and software development.</p>
+
+            <div class="glass card" style="margin-top:1rem;">
+              <form id="contactForm" class="form" novalidate>
+                <div class="field">
+                  <label for="name">Your name</label>
+                  <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone (optional)</label>
+                  <input id="phone" name="phone" type="tel" placeholder="+91 7XXXXXXXXX" />
+                </div>
+
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <input id="subject" name="subject" type="text" placeholder="Project / Opportunity" />
+                </div>
+
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Hi — I'd like to discuss..." required></textarea>
+                </div>
+
+                <div style="display:flex; gap:.6rem;">
+                  <button class="btn btn-primary" type="submit">Send Message</button>
+                  <button class="btn btn-ghost" type="reset">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <aside>
+            <div class="glass card">
+              <h3>Contact Info</h3>
+              <p style="margin:0 .0 .6rem;"><strong>Phone:</strong> <a class="link" href="tel:+917676427089">+91 7676427089</a></p>
+              <p style="margin:0 .0 .6rem;"><strong>Email:</strong> <a class="link" href="mailto:goudanivedita57@gmail.com">goudanivedita57@gmail.com</a></p>
+              <p style="margin:0 .0 .6rem;"><strong>Location:</strong> Bengaluru, Karnataka</p>
+
+              <div style="margin-top:.6rem; display:flex; gap:.5rem;">
+                <a class="icon-link" href="https://linkedin.com/in/nivedita-gouda-0772b5259" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/goudanivedita57-design" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div style="margin-top: .9rem;">
+                <a class="btn btn-ghost" href="./nivedita_resume.pdf" download style="width:100%;">Download Resume</a>
+              </div>
+            </div>
+
+            <div class="glass card" style="margin-top:1rem;">
+              <h3>Availability</h3>
+              <p class="hint" style="margin:0;">Open to internships and entry-level roles. Typical response time: 2–3 business days.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="mini-mark" aria-hidden="true">NS</span>
+          <span>Nivedita Shankar Gouda</span>
+        </div>
+        <span>© <span id="year"></span> Nivedita. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
